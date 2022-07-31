@@ -11,11 +11,11 @@ let bgMarble=()=>{
 };
 
 let bgRainbow=()=>{ 
-    document.getElementById('bg').style.backgroundImage ="url('https://images.unsplash.com/photo-1582573732277-c5444fa37391?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')";
+    document.getElementById('bg').style.backgroundImage ="url('images/rainbow.webp')";
 };
 
 let bgSmoke=()=>{ 
-    document.getElementById('bg').style.backgroundImage ="url('https://images.unsplash.com/photo-1598760122223-45f0f18a1bbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')";
+    document.getElementById('bg').style.backgroundImage ="url('images/smoke.webp')";
 };
 
 var userInput = document.getElementById("new-task");
