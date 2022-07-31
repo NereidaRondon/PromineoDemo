@@ -27,7 +27,6 @@ userInput.addEventListener("keypress", function(event) {
     }
 });
 
-
 let id = 0;
 let task=()=>{
     let date = new Date();
@@ -35,17 +34,13 @@ let task=()=>{
     let row = table.insertRow(-1);
 
     row.setAttribute('id', `item-${id}`);
-    row.setAttribute('onmouseover', `mouseOver()`);
-    
+    row.setAttribute('onmouseover', `mouseOver()`);   
     
     row.insertCell(0).innerHTML=`${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`;
     
-    row.insertCell(1).innerHTML=document.getElementById('new-start-date').value;
-    
-    row.insertCell(2).innerHTML=document.getElementById('new-end-date').value;
-    
+    row.insertCell(1).innerHTML=document.getElementById('new-start-date').value; 
+    row.insertCell(2).innerHTML=document.getElementById('new-end-date').value;  
     row.insertCell(3).innerHTML = document.getElementById('new-task').value;
-
 
     let deleteAction = row.insertCell(4);
     deleteAction.appendChild(deleteButton(id++));
@@ -56,7 +51,6 @@ let task=()=>{
     document.getElementById('new-start-date').value='';
     document.getElementById('new-end-date').value='';
     console.log(`Fields are cleared`);   
-    
 }
  
 function deleteButton(id){
